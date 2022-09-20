@@ -4,7 +4,7 @@ const JwtStrategy = require("passport-jwt").Strategy,
   ExtractJwt = require("passport-jwt").ExtractJwt;
 const opts = {};
 opts.jwtFromRequest = ExtractJwt.fromHeader("x-auth-token");
-opts.secretOrKey = process.env.JWT_SECRET;
+opts.secretOrKey = "kjsdbfskndfkldnfklds";
 
 passport.use(
   new JwtStrategy(opts, async (jwt_payload, done) => {
